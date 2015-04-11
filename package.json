@@ -7,7 +7,7 @@
 
   "repository": {
     "type": "git",
-    "url": "ssh://github.com/repository/url.git"
+    "url": "https://github.com/jgsousa/openui5-simplecharts.git"
   },
   "author": "João Guilherme Sousa",
   "license": "Apache License, Version 2.0",

@@ -32,7 +32,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/library'], // library dependenc
             // delegate further initialization of this library to the Core
         sap.ui.getCore().initLibrary({
             name : "openui5.simplecharts",
-            version: "1.29.0-20150411192427.0+sha.477ed82",
+            version: "1.29.0-20150411215206.0+sha.477ed82",
             dependencies : ["sap.ui.core"],
             types: [],
             interfaces: [],

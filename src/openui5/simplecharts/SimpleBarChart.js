@@ -37,8 +37,9 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
 
         SimpleBarChart.prototype._drawGraph = function (iWidth, iHeight) {
 
-            jQuery.sap.registerModulePath('bower_component', '/bower_components');
+            jQuery.sap.require("sap.ui.thirdparty.d3");
             jQuery.sap.require("bower_component.d3-tip.index");
+
 
             if(!iWidth) {
                 this.controlWidth = this.getProperty("width");
