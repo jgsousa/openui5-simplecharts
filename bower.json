@@ -1,0 +1,24 @@
+{
+  "name": "openui5.simplecharts",
+  "version": "0.1.0",
+  "authors": [
+    "João Guilherme Sousa"
+  ],
+  "description": "OpenUI5 Simple Charts",
+  "keywords": [
+    "openui5", "charts"
+  ],
+  "license": "Apache License, Version 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "samples",
+    "src"
+  ],
+  "dependencies": {
+    "d3-tip": "~0.6.6"
+  }
+}

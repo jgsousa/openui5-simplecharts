@@ -1,0 +1,14 @@
+{ "items": [
+  { "label": "Benfica", "value": "2014", "value2":"30"},
+  { "label": "Benfica", "value": "2013", "value2":"60"},
+  { "label": "Sporting", "value": "2014", "value2":"20"},
+  { "label": "Sporting", "value": "2013", "value2":"40"},
+  { "label": "FC Porto", "value": "2014", "value2":"10"},
+  { "label": "FC Porto", "value": "2013", "value2":"20"},
+  { "label": "Benfica", "value": "2012", "value2":"50"},
+  { "label": "Benfica", "value": "2011", "value2":"60"},
+  { "label": "Sporting", "value": "2012", "value2":"20"},
+  { "label": "Sporting", "value": "2011", "value2":"50"},
+  { "label": "FC Porto", "value": "2012", "value2":"30"},
+  { "label": "FC Porto", "value": "2011", "value2":"40"}
+]}

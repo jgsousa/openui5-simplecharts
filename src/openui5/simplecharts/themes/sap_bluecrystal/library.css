@@ -1,0 +1,247 @@
+/* Global CSS for 'base' theme */
+/* ---------------------------------------------------------------------------------------- */
+/* TMP during LESS convertion ---- to be deleted */
+/* may be required by SubstitutionRulesManager.css in inbox lib */
+/* ---------------------------------------------------------------------------------------- */
+/** 
+  * This parameter is used in the Shell control to calculate the size when it grows.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE. 
+  */
+/** 
+  * This parameter is used in the Shell control to calculate the size of the margin when showing
+  * an overflow button in the right pane. As of 1.18.0 this value contains the _maximum_ height
+  * of the overflow button, if the text inside the button is smaller, the button shrinks with it.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE.
+  */
+/* Approved by UX to use a hard coded color value for this */
+/* NotificationBar */
+/* The maximized height will be calculated corresponding to the window's height.*/
+/* ToolPopup */
+/* Telling the ToolPopup if it's inverted per default */
+/* transparent; */
+/* Default margins classes to be used by the application for all controls */
+/*make tiny margin themable*/
+/*make small margin themable*/
+/*make medium margin themable*/
+/*make large margin themable*/
+/* 
+ * This is a mixin for creating the predefined container content padding
+ * classes:
+ * sapUiNoContainerContentPadding
+ * sapUiContainerContentPadding
+ * sapUiResponsiveContainerContentPadding
+ * These classes can be set on many UI5 containers and will 
+ * add padding inside the container's content padding based 
+ * on the selectors that are arguments for this mixin.
+ *
+ * Arguments to this function-like mixin are the rootClass selector and
+ * the content selector where the padding should be applied.
+ */
+/* 
+  * the sapLess-parser has problems with an escaped string as default value for the parameterized mixin
+  * therefore we need to temporarily use a parameter assigning the default value
+  */
+.spacerTop {
+  margin-top: 2rem;
+}
+.spacerLeft {
+  margin-left: 10px;
+}
+.bar {
+  fill: steelblue;
+}
+.bar:hover {
+  fill: brown;
+}
+.axis {
+  font: 14px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.x.axis path {
+  display: none;
+}
+.canvas {
+  width: 900px;
+  height: 500px;
+}
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+/* ===================================== */
+/* Quick Theming                         */
+/* ===================================== */
+/*
+ UX COLOR SET
+*/
+/* ACCENT COLORS */
+/* Shadows */
+/* SPECIAL COLORS */
+/* Grayscale Backgrounds */
+/* Grayscale Borders */
+/* Grayscale Text */
+/* Semantic Background Colors */
+/* Semantic Border Colors */
+/* Semantic Foreground Elements */
+/* Semantic Text */
+/* Semantic Foreground Colors */
+/* ===================================== */
+/* Expert Theming                        */
+/* ===================================== */
+/* ====================================== */
+/* Global CSS for 'sap_bluecrystal' theme */
+/* ====================================== */
+/* ===================================== */
+/* Semantic Theming Mapping              */
+/* ===================================== */
+/* ===================================== */
+/* Accent Colors                         */
+/* ===================================== */
+/* ===================================== */
+/* EFFECT COLORS                         */
+/* ===================================== */
+/* ===================================== */
+/* Special Colors                        */
+/* ===================================== */
+/* ===================================== */
+/* Background Colors                     */
+/* ===================================== */
+/* Grayscale Backgrounds                 */
+/* ===================================== */
+/* Border Colors                         */
+/* ===================================== */
+/* Grayscale Borders                     */
+/* ===================================== */
+/* Font Colors                           */
+/* ===================================== */
+/* Grayscale Text                        */
+/* ================================================== */
+/* Absolute fixed Colors - do not use in Controls!!   */
+/* ================================================== */
+/* ======================================================= */
+/* Semantic Foreground Colors - do not use in Controls!!   */
+/* ======================================================= */
+/* ===================================== */
+/* Brand Colors                          */
+/* ===================================== */
+/* ===================================== */
+/* Base Colors                           */
+/* ===================================== */
+/* Tinted Backgrounds                    */
+/* Button Background Colors              */
+/* Transparent Backgrounds               */
+/* ===================================== */
+/* Font Colors                           */
+/* ===================================== */
+/* Hyperlinks                            */
+/* Semantic Text                         */
+/* ===================================== */
+/* Border Colors                         */
+/* ===================================== */
+/* Semantic Border Colors                */
+/* Semantic Background Colors            */
+/* Line Colors                           */
+/* Table Colors                          */
+/* ===================================== */
+/* FOREGROUND ELEMENT COLORS             */
+/* ===================================== */
+/* General Foreground Elements           */
+/* Semantic Foreground Elements          */
+/* ===================================== */
+/* HOVER COLORS             */
+/* ===================================== */
+/* ===================================== */
+/* Font                                  */
+/* ===================================== */
+/*Please also note the mixins in shared.css which deal with the following background parameters*/
+/* ---------------------------------------------------------------------------------------- */
+/* Color used to show keyboard focus on an element (usually as outline) */
+/* Derived Chart Colors */
+/* Shell */
+/* Approved by UX to use a hard coded color value for this */
+/* Exact */
+/* Notification Bar */
+/* ToolPopup */
+/* Telling the ToolPopup if it's inverted per default */
+/* Callout */
+/* ActionSheet                 */
+/* Bar                         */
+/* Busy Indicator              */
+/* BusyDialog              */
+/* --------------------------- */
+/* Button                START */
+/* --------------------------- */
+/* fade(@sapUiDarkText, 50%); */
+/* --------------------------- */
+/* Button                  END */
+/* --------------------------- */
+/* --------------------------- */
+/* ToggleButton          START */
+/* --------------------------- */
+/* --------------------------- */
+/* ToggleButton            END */
+/* --------------------------- */
+/* CheckBox                     */
+/* DateTimeInput Custom Picker JavaScript	  */
+/* mixed, scroller, clickpick */
+/* mixed, scroller, clickpick */
+/* modal, bubble, bottom, top */
+/* modal, bubble, bottom, top */
+/* DateTimeInput Custom Picker Design	  	*/
+/* IconTabBar			*/
+/* Input/SearchField           */
+/* Label           */
+/* List                        */
+/* List as Table               */
+/* ListItemBase                */
+/* ActionListItem               */
+/* MessageToast                 */
+/* Page                        */
+/* Panel                  */
+/* Popover                */
+/* Popups - shared parameters */
+/* PullToRefresh */
+/* RadioButton                 */
+/* Scrollbar */
+/* SegmentedButton                */
+/* Select                       */
+/* SelectList                    */
+/* ComboBox */
+/* Shell                        */
+/* Slider                       */
+/* SplitContainer */
+/* StandardListItem                */
+/* Switch                       */
+/* RatingIndicator                 */
+/* Toolbar 				*/
+/* FeedInput                    */
+/* OverlapCalendar Event Type */
+/* Calendar Legend */
+/* Tab Container */

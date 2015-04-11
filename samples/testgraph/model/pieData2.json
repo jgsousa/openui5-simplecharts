@@ -1,0 +1,7 @@
+{ "items": [
+  { "label": "Benfica", "value": "52"},
+  { "label": "Porto", "value": "20"},
+  { "label": "Sporting", "value": "20"},
+  { "label": "Boavista", "value": "10" },
+  { "label": "Braga", "value": "5" }
+]}
