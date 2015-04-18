@@ -44,7 +44,7 @@ sap.ui.core.UIComponent.extend("testgraph.Component", {
     init: function () {
         sap.ui.core.UIComponent.prototype.init.apply(this, arguments);
 
-        sap.ui.getCore().loadLibrary("openui5.simplecharts", "../../resources/openui5/simplecharts/");
+        sap.ui.getCore().loadLibrary("openui5.simplecharts", "../../src/openui5/simplecharts/");
         jQuery.sap.registerModulePath('bower_component', '../../bower_components');
 
         var mConfig = this.getMetadata().getConfig();

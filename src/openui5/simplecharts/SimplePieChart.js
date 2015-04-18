@@ -51,6 +51,12 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
                 this.controlHeight = iHeight;
             }
 
+            if(!iWidth && this.oldWidth ){
+                this.controlWidth = this.oldWidth;
+                this.controlHeight = this.oldHeight;
+            }
+            this.controlAspect = this.controlWidth / this.controlHeight;
+
 
             var aId = this.getProperty("id");
             var hashId = "#" + aId;
@@ -139,11 +145,13 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
                     var h = Math.min(chart.getProperty("height"), this.iHeight);
                     if(chart._shouldResize(w, chart.controlWidth, h,
                             chart.controlHeight)) {
-
+                        h = w / chart.controlAspect;
                         chart._drawGraph(w, h);
                     }
                 });
             }
+            this.oldWidth = this.controlWidth;
+            this.oldHeight = this.controlHeight;
         };
 
         /**

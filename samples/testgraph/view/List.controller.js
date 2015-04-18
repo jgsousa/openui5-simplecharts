@@ -23,9 +23,14 @@ testgraph.util.Controller.extend("testgraph.view.List", {
         var data = model.getData();
         model.loadData("./model/barData2.json", '', false);
         var data2 = model.getData();
+        model.loadData("./model/lineData1.json", '', false);
+        var data5 = model.getData();
+        model.loadData("./model/lineData2.json", '', false);
+        var data6 = model.getData();
 
+
+        // Barcharts
         var oDataset = new openui5.simplecharts.SimpleChartData();
-
         oDataset.bindDimensions({ items : [ { name: "label", description:"Equipa", axis: "x"},
             {name:"value", description:"Ano", axis:"y"}]});
         oDataset.bindMeasures({ items : [ { name: "value2", description:"Golos", rank: "1"}]});
@@ -37,6 +42,15 @@ testgraph.util.Controller.extend("testgraph.view.List", {
         var grafico3 = new openui5.simplecharts.SimpleStackedBarChart({ title: "Goals by Year"});
         grafico3.setDataSet(oDataset);
 
+        // LineCharts
+        var oDataset5 = new openui5.simplecharts.SimpleChartData();
+        oDataset5.bindDimensions({ items : [ { name: "date", description:"Data", axis: "x"},
+            {name:"team", description:"Equipa", axis:"y"}]});
+        oDataset5.bindMeasures({ items : [ { name: "value", description:"Golos", rank: "1"}]});
+        oDataset5.bindData(data5);
+        var grafico5 = new openui5.simplecharts.SimpleLineChart({ title: "Goals by Year"});
+        grafico5.setDataSet(oDataset5);
+
         var grid = this.getView().byId("teste");
         grid.addContent(grafico);
 
@@ -47,6 +61,7 @@ testgraph.util.Controller.extend("testgraph.view.List", {
 
             var oDataset2 = new openui5.simplecharts.SimpleChartData();
             var oDataset4 = new openui5.simplecharts.SimpleChartData();
+            var oDataset6 = new openui5.simplecharts.SimpleChartData();
 
             oDataset2.bindDimensions({ items : [ { name: "label", description:"Equipa", axis: "x"},
                 {name:"value", description:"Ano", axis:"y"}]});
@@ -55,18 +70,26 @@ testgraph.util.Controller.extend("testgraph.view.List", {
             oDataset4.bindDimensions({ items : [ { name: "label", description:"Equipa", axis: "x"} ] });
             oDataset4.bindMeasures({ items : [ { name: "value", description:"Golos", rank: "1"}]});
 
+            oDataset6.bindDimensions({ items : [ { name: "date", description:"Data", axis: "x"},
+                {name:"team", description:"Equipa", axis:"y"}]});
+            oDataset6.bindMeasures({ items : [ { name: "value", description:"Golos", rank: "1"}]});
+
+
             if(this.primeiro == true){
                 oDataset2.bindData(data2);
-                oDataset4.bindData(data4)
+                oDataset4.bindData(data4);
+                oDataset6.bindData(data6);
                 this.primeiro = false;
             }else{
                 oDataset2.bindData(data);
                 oDataset4.bindData(data3);
+                oDataset6.bindData(data5);
                 this.primeiro = true;
             }
             this.setDataSet(oDataset2);
             grafico2.setDataSet(oDataset4);
             grafico3.setDataSet(oDataset2);
+            grafico5.setDataSet(oDataset6);
         }, this.grafico]});
 
         model = new sap.ui.model.json.JSONModel();
@@ -85,6 +108,7 @@ testgraph.util.Controller.extend("testgraph.view.List", {
 
         grid.addContent(grafico2);
         grid.addContent(grafico3);
+        grid.addContent(grafico5);
 
         grid.addContent(button);
 

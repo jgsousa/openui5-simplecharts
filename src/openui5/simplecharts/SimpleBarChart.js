@@ -94,7 +94,7 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
              15% space. A bit hit, but if you have a better suggestion, create an issue.
              */
             var x0 = d3.scale.ordinal()
-                .rangeRoundBands([0, width - 80], .1);
+                .rangeRoundBands([0, width - 60], .1);
 
             var x1 = d3.scale.ordinal();
 

@@ -1,0 +1,26 @@
+{
+  "items": [
+    { "date": "20150501", "team":"Benfica", "value": 20 },
+    { "date": "20150508", "team":"Benfica", "value": 23 },
+    { "date": "20150515", "team":"Benfica", "value": 24 },
+    { "date": "20150523", "team":"Benfica", "value": 21 },
+    { "date": "20150530", "team":"Benfica", "value": 19 },
+    { "date": "20150606", "team":"Benfica", "value": 18 },
+    { "date": "20150613", "team":"Benfica", "value": 22 },
+    { "date": "20150501", "team":"Sporting", "value": 15 },
+    { "date": "20150508", "team":"Sporting", "value": 16 },
+    { "date": "20150515", "team":"Sporting", "value": 12 },
+    { "date": "20150523", "team":"Sporting", "value": 15 },
+    { "date": "20150530", "team":"Sporting", "value": 18 },
+    { "date": "20150606", "team":"Sporting", "value": 20 },
+    { "date": "20150613", "team":"Sporting", "value": 18 },
+    { "date": "20150501", "team":"Porto", "value": 16 },
+    { "date": "20150508", "team":"Porto", "value": 18 },
+    { "date": "20150515", "team":"Porto", "value": 20 },
+    { "date": "20150523", "team":"Porto", "value": 20 },
+    { "date": "20150530", "team":"Porto", "value": 19 },
+    { "date": "20150606", "team":"Porto", "value": 17 },
+    { "date": "20150613", "team":"Porto", "value": 10 }
+
+  ]
+}
