@@ -197,7 +197,7 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
             var raciow = ( newWidth - oldWidth) / oldWidth;
             var racioh = ( newHeight - oldHeight) / oldHeight;
 
-            if (Math.abs(raciow) > 0.0 ||  Math.abs(racioh) > 0.0){
+            if (Math.abs(raciow) > 0.1 ||  Math.abs(racioh) > 0.1){
                 return true;
             }
             else{
