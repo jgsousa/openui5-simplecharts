@@ -14,11 +14,32 @@
  limitations under the License.
  */
 
+/**
+ * Simple Line Chart
+ * @namespace
+ * @name openui5.simplecharts
+ * @public
+ */
 sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
     function(jQuery, Control, library) {
         "use strict";
 
-
+        /**
+         * Constructor for a line chart
+         *
+         * @class
+         * Vertical line chart provider
+         *
+         * @extends sap.ui.core.Control
+         *
+         * @author João Guilherme Sousa
+         * @version 0.1.0
+         *
+         * @constructor
+         * @public
+         * @alias openui5.simplecharts.SimpleLineChart
+         *
+         */
         var SimpleLineChart = Control.extend("openui5.simplecharts.SimpleLineChart", {
                 metadata: {
                     library: "openui5.simplecharts",

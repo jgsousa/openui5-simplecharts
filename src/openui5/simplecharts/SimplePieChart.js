@@ -14,11 +14,32 @@
  limitations under the License.
  */
 
+/**
+ * Simple Pie Chart
+ * @namespace
+ * @name openui5.simplecharts
+ * @public
+ */
 sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
     function(jQuery, Control, library) {
         "use strict";
 
-
+        /**
+         * Constructor for a pie chart
+         *
+         * @class
+         * Vertical pie chart provider
+         *
+         * @extends sap.ui.core.Control
+         *
+         * @author João Guilherme Sousa
+         * @version 0.1.0
+         *
+         * @constructor
+         * @public
+         * @alias openui5.simplecharts.SimplePieChart
+         *
+         */
         var SimplePieChart = Control.extend("openui5.simplecharts.SimplePieChart", {
                 metadata: {
                     library: "openui5.simplecharts",

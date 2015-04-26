@@ -22,7 +22,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/library'], // library dependenc
         /**
          * Simplecharts controls library.
          *
-         * @namespace
+         * @namespace openui5
          * @name openui5.simplecharts
          * @author João Guilherme Sousa
          * @version 0.1.0

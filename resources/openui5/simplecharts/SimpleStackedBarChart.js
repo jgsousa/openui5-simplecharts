@@ -14,10 +14,32 @@
  limitations under the License.
  */
 
+/**
+ * Simple Stacked Bar Chart
+ * @namespace
+ * @name openui5.simplecharts
+ * @public
+ */
 sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
     function(jQuery, Control, library) {
         "use strict";
 
+        /**
+         * Constructor for a stacked bar chart
+         *
+         * @class
+         * Vertical stacked bar chart provider
+         *
+         * @extends sap.ui.core.Control
+         *
+         * @author João Guilherme Sousa
+         * @version 0.1.0
+         *
+         * @constructor
+         * @public
+         * @alias openui5.simplecharts.SimpleStackedBarChart
+         *
+         */
         var SimpleStackedBarChart = Control.extend("openui5.simplecharts.SimpleStackedBarChart", {
                 metadata: {
                     library: "openui5.simplecharts",
@@ -94,7 +116,7 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
              15% space. A bit hit, but if you have a better suggestion, create an issue.
              */
             var x = d3.scale.ordinal()
-                .rangeRoundBands([0, width - 80], .1);
+                .rangeRoundBands([0, width - 60], .1);
 
             /*
              TODO Color scale is hardcoded. I will change this to make it a property of the chart with this as the

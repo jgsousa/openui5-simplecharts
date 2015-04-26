@@ -14,11 +14,32 @@
  limitations under the License.
  */
 
+/**
+ * Simple Pie Chart
+ * @namespace
+ * @name openui5.simplecharts
+ * @public
+ */
 sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
     function(jQuery, Control, library) {
         "use strict";
 
-
+        /**
+         * Constructor for a pie chart
+         *
+         * @class
+         * Vertical pie chart provider
+         *
+         * @extends sap.ui.core.Control
+         *
+         * @author João Guilherme Sousa
+         * @version 0.1.0
+         *
+         * @constructor
+         * @public
+         * @alias openui5.simplecharts.SimplePieChart
+         *
+         */
         var SimplePieChart = Control.extend("openui5.simplecharts.SimplePieChart", {
                 metadata: {
                     library: "openui5.simplecharts",
@@ -50,6 +71,12 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
                 this.controlWidth = iWidth;
                 this.controlHeight = iHeight;
             }
+
+            if(!iWidth && this.oldWidth ){
+                this.controlWidth = this.oldWidth;
+                this.controlHeight = this.oldHeight;
+            }
+            this.controlAspect = this.controlWidth / this.controlHeight;
 
 
             var aId = this.getProperty("id");
@@ -139,11 +166,13 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
                     var h = Math.min(chart.getProperty("height"), this.iHeight);
                     if(chart._shouldResize(w, chart.controlWidth, h,
                             chart.controlHeight)) {
-
+                        h = w / chart.controlAspect;
                         chart._drawGraph(w, h);
                     }
                 });
             }
+            this.oldWidth = this.controlWidth;
+            this.oldHeight = this.controlHeight;
         };
 
         /**
@@ -189,7 +218,7 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
             var raciow = ( newWidth - oldWidth) / oldWidth;
             var racioh = ( newHeight - oldHeight) / oldHeight;
 
-            if (Math.abs(raciow) > 0.0 ||  Math.abs(racioh) > 0.0){
+            if (Math.abs(raciow) > 0.1 ||  Math.abs(racioh) > 0.1){
                 return true;
             }
             else{
