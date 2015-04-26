@@ -14,6 +14,12 @@
  limitations under the License.
  */
 
+/**
+ * OpenUI5 Simple Charts
+ * @namespace
+ * @name openui5
+ */
+
 sap.ui.define(['jquery.sap.global', 'sap/ui/core/library'], // library dependency
     function(jQuery) {
 
@@ -22,7 +28,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/library'], // library dependenc
         /**
          * Simplecharts controls library.
          *
-         * @namespace openui5
+         * @namespace
          * @name openui5.simplecharts
          * @author João Guilherme Sousa
          * @version 0.1.0

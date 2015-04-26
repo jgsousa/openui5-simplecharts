@@ -14,12 +14,6 @@ distributed under the License is distributed on an "AS IS" BASIS,
 limitations under the License.
 */
 
-/**
- * Simple Bar Chart
- * @namespace
- * @name openui5.simplecharts
- * @public
- */
 
 sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
     function(jQuery, Control, library) {
