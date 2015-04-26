@@ -14,21 +14,15 @@
  limitations under the License.
  */
 
-/**
- * Simple Chart Measure
- * @namespace
- * @name openui5.simplecharts
- * @public
- */
 sap.ui.define(['jquery.sap.global','sap/ui/core/Element', './library'],
     function(jQuery, Element, library){
         "use strict";
 
         /**
-         * Constructor for the dimension of a SimpleChart
+         * Constructor for the measure of a SimpleChart
          *
          * @class
-         * Dimension of a SimpleChart
+         * Measure of a SimpleChart
          *
          * @extends sap.ui.core.Element
          *
