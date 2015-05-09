@@ -46,7 +46,8 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/core/library'], // library dependenc
                 "openui5.simplecharts.SimpleBarChart",
                 "openui5.simplecharts.SimplePieChart",
                 "openui5.simplecharts.SimpleStackedBarChart",
-                "openui5.simplecharts.SimpleLineChart"
+                "openui5.simplecharts.SimpleLineChart",
+                "openui5.simplecharts.SimpleMapPlot"
             ],
             elements: [
                 "openui5.simplecharts.SimpleChartData",

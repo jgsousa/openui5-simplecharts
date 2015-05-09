@@ -1,15 +1,16 @@
 {
-  "name": "openui5-simplecharts",
-  "version": "0.2.0",
-  "description": "OpenUI5 library for Simple Charts",
-  "keywords": [ "openui5"
-  ],
-
+  "name": "testgraph",
+  "version": "1.0.0",
+  "description": "Testes",
+  "main": "Component.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jgsousa/openui5-simplecharts.git"
+    "url": "ssh://github.com/repository/url.git"
   },
-  "author": "João Guilherme Sousa",
+  "author": "John Rambo",
   "license": "Apache License, Version 2.0",
 
   "devDependencies": {

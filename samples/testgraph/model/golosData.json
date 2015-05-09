@@ -1,0 +1,6 @@
+{ "items": [
+  { "label": "Estadio da Luz", "golos": "223", "lat": 38.753036, "long": -9.184997},
+  { "label": "Estadio de Alvalade", "golos": "100", "lat": 38.761, "long": -9.161 },
+  { "label": "Estadio do Dragao", "golos": "160", "lat": 41.162, "long": -8.6124}
+
+]}

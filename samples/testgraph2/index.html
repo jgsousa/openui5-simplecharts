@@ -11,18 +11,19 @@
             data-sap-ui-theme="sap_bluecrystal"
             data-sap-ui-xx-bindingSyntax="complex"
 
-            data-sap-ui-resourceroots='{"testgraph": "./"}'>
+            data-sap-ui-resourceroots='{"testgraph2": "./"}'>
     </script>
+<!--    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />-->
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-
 
     <script>
         sap.ui.getCore().attachInit(function() {
             new sap.m.Shell({
                 app: new sap.ui.core.ComponentContainer({
                     height : "100%",
-                    name : "testgraph"
+                    name : "testgraph2"
                 })
             }).placeAt("content");
         });

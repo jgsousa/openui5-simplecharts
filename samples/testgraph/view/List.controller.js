@@ -27,6 +27,8 @@ testgraph.util.Controller.extend("testgraph.view.List", {
         var data5 = model.getData();
         model.loadData("./model/lineData2.json", '', false);
         var data6 = model.getData();
+        model.loadData("./model/golosData.json", '', false);
+        var data7 = model.getData();
 
 
         // Barcharts
@@ -50,6 +52,19 @@ testgraph.util.Controller.extend("testgraph.view.List", {
         oDataset5.bindData(data5);
         var grafico5 = new openui5.simplecharts.SimpleLineChart({ title: "Goals by Year"});
         grafico5.setDataSet(oDataset5);
+
+        var map = new openui5.simplecharts.SimpleMapPlot();
+        var oMapset = new openui5.simplecharts.SimpleChartData();
+        oMapset.bindDimensions({ items : [
+            { name: "lat", description:"Latitude", axis: "x"},
+            { name: "long", description:"Longitude", axis:"y"},
+            { name: "label", description:"Estadio", axis:"z"}
+        ]});
+
+        oMapset.bindMeasures({ items : [ { name: "golos", description:"Golos", rank: "1"}]});
+        oMapset.bindData(data7);
+        map.setDataSet(oMapset);
+
 
         var grid = this.getView().byId("teste");
         grid.addContent(grafico);
@@ -109,6 +124,7 @@ testgraph.util.Controller.extend("testgraph.view.List", {
         grid.addContent(grafico2);
         grid.addContent(grafico3);
         grid.addContent(grafico5);
+        grid.addContent(map);
 
         grid.addContent(button);
 

@@ -1,0 +1,15 @@
+<core:View
+        xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+        xmlns:l="sap.ui.layout"
+        xmlns:f="sap.ui.layout.form" xmlns:Core="sap.ui.core"
+        controllerName="testgraph2.view.List" xmlns:html="http://www.w3.org/1999/xhtml">
+    <Page title="{i18n>Titulo}" showNavButton="true" id="page2">
+        <headerContent>
+        </headerContent>
+        <footer>
+            <Toolbar>
+
+            </Toolbar>
+        </footer>
+    </Page>
+</core:View>
