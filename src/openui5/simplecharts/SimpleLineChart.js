@@ -182,6 +182,9 @@ sap.ui.define(['jquery.sap.global','sap/ui/core/Control','./library'],
                 .style("stroke", function(d) {
                     return color(d.value);
                 })
+                .style("fill", function(d) {
+                    return "transparent";
+                })
                 .transition()
                 .attr("d", function(d) {
                     return line(d.series);
